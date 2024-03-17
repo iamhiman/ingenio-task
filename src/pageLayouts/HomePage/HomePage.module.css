@@ -1,0 +1,89 @@
+.pageLayout {
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pageHeading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cardBorderBottom {
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.cardLeftContent {
+  display: flex;
+  font-weight: 400;
+}
+
+.cardRightContent {
+  padding-top: 20px;
+}
+
+.name {
+  margin-left: 10px;
+  color: #42a297;
+}
+
+.priceTag {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.priceTagPerMinute {
+  font-size: 12px;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.online {
+  background-color: #08bca4;
+  cursor: pointer;
+}
+
+.online:hover {
+  background-color: #13cfb6;
+}
+
+.offline {
+  background-color: #c1c1c1;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background:
+    radial-gradient(farthest-side, #08bca4 94%, #0000) top/9px 9px no-repeat,
+    conic-gradient(#0000 30%, #08bca4);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+  -webkit-animation: spinnerAnimation 1s infinite linear;
+  animation: spinnerAnimation 1s infinite linear;
+}
+
+@-webkit-keyframes spinnerAnimation {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes spinnerAnimation {
+  100% {
+    transform: rotate(1turn);
+  }
+}
